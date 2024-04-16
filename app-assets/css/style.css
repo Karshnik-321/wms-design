@@ -124,6 +124,14 @@ html body {
     background-color: transparent !important;
   }
 
+  .dashboard-info{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .dashboard-card{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
   .header-bar{
     display: flex;
     justify-content: center;
@@ -134,7 +142,19 @@ html body {
   .wms-logo{
     width: 80px;
   }
+  .card-heading{
+    font-weight: 500;
+    font-size: 1.285rem;
+  }
   @media only screen and (max-width: 600px) {
+    .dashboard-info{
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+    .dashboard-card{
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
     .header-bar{
       justify-content: center;
     }
@@ -143,6 +163,9 @@ html body {
     }
     .wms-logo{
       width: 60px;
+    }
+    .card-heading{
+      font-size: 1.1rem;
     }
   }
 
@@ -171,6 +194,7 @@ html body {
     width: 18px;
     height: 18px;
     margin-bottom: 5px;
+    /* display: none; */
   }
   .custom-nav li a:hover{
     color: #333;
