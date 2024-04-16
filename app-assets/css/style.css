@@ -23,6 +23,9 @@ html body {
 .card-hover:hover h3,.card-hover:hover .icon{
   color: white;
 }
+.btn{
+  white-space:nowrap;
+}
 .bg-primary {
     background-color: #F64E60 !important;
   }
