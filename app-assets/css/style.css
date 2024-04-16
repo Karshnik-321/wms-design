@@ -121,6 +121,28 @@ html body {
     background-color: transparent !important;
   }
 
+  .header-bar{
+    display: flex;
+    justify-content: center;
+  }
+  .header-bar>div:first-child{
+    flex-grow:1;
+  }
+  .wms-logo{
+    width: 80px;
+  }
+  @media only screen and (max-width: 600px) {
+    .header-bar{
+      justify-content: center;
+    }
+    .header-bar>div:first-child{
+      flex-grow:inherit;
+    }
+    .wms-logo{
+      width: 60px;
+    }
+  }
+
   .card-icon .icon{
     width: 50px;
     height: 50px;
@@ -137,10 +159,10 @@ html body {
     flex-direction: column;
     align-items: center;
     padding: 15px 20px;
-    /* border-radius: 4px; */
     color: #777;
     font-size: 13px;
     font-weight: 500;
+    white-space: nowrap;
   }
   .custom-nav li a svg{
     width: 18px;
@@ -154,3 +176,6 @@ html body {
     border-bottom:3px solid #f41d34;
     color: #f41d34;
   }
+  .overflow-x-auto {
+    overflow-x: auto;
+}
