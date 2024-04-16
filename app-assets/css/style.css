@@ -1,0 +1,156 @@
+html body {
+    background-image: url('http://events.jagran.com/joshhome/cpr/img/motif.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 13%;
+    background-attachment: fixed;
+}
+.brand-logo{padding-left: 0.3rem;}
+
+.qube-thumb{height: 150px;background-color: black;color: beige;display: flex;align-items: center;justify-content: center;border-radius: 5px 5px 0 0;overflow: hidden;}
+
+.citypos{ width: 50px; text-align: center; height: 27px; font-size: 10px; font-weight: 500; }
+
+.mkc_circle { animation: mck_progress 1000ms ease-in-out; } @keyframes mck_progress { 0% { stroke-dasharray: 0, 100; }}
+
+.card-hover:hover{
+  background-color: #f41d34;
+  color: white;
+}
+.card-hover h3,.card-hover .icon{
+  color: #333;
+}
+.card-hover:hover h3,.card-hover:hover .icon{
+  color: white;
+}
+.bg-primary {
+    background-color: #F64E60 !important;
+  }
+  
+  a.bg-primary:hover, a.bg-primary:focus,
+  button.bg-primary:hover,
+  button.bg-primary:focus {
+    background-color: #f41d34 !important;
+  }
+  
+  .bg-secondary {
+    background-color: #E4E6EF !important;
+  }
+  
+  a.bg-secondary:hover, a.bg-secondary:focus,
+  button.bg-secondary:hover,
+  button.bg-secondary:focus {
+    background-color: #c4c8dc !important;
+  }
+  
+  .bg-success {
+    background-color: #1BC5BD !important;
+  }
+  
+  a.bg-success:hover, a.bg-success:focus,
+  button.bg-success:hover,
+  button.bg-success:focus {
+    background-color: #159892 !important;
+  }
+  
+  .bg-info {
+    background-color: #8950FC !important;
+  }
+  
+  a.bg-info:hover, a.bg-info:focus,
+  button.bg-info:hover,
+  button.bg-info:focus {
+    background-color: #671efb !important;
+  }
+  
+  .bg-warning {
+    background-color: #FFA800 !important;
+  }
+  
+  a.bg-warning:hover, a.bg-warning:focus,
+  button.bg-warning:hover,
+  button.bg-warning:focus {
+    background-color: #cc8600 !important;
+  }
+  
+  .bg-danger {
+    background-color: #F64E60 !important;
+  }
+  
+  a.bg-danger:hover, a.bg-danger:focus,
+  button.bg-danger:hover,
+  button.bg-danger:focus {
+    background-color: #f41d34 !important;
+  }
+  
+  .bg-light {
+    background-color: #F3F6F9 !important;
+  }
+  
+  a.bg-light:hover, a.bg-light:focus,
+  button.bg-light:hover,
+  button.bg-light:focus {
+    background-color: #d1dde8 !important;
+  }
+  
+  .bg-dark {
+    background-color: #181C32 !important;
+  }
+  
+  a.bg-dark:hover, a.bg-dark:focus,
+  button.bg-dark:hover,
+  button.bg-dark:focus {
+    background-color: #070910 !important;
+  }
+  
+  .bg-white {
+    background-color: #ffffff !important;
+  }
+  
+  a.bg-white:hover, a.bg-white:focus,
+  button.bg-white:hover,
+  button.bg-white:focus {
+    background-color: #e6e6e6 !important;
+  }
+  
+  .bg-white {
+    background-color: #ffffff !important;
+  }
+  
+  .bg-transparent {
+    background-color: transparent !important;
+  }
+
+  .card-icon .icon{
+    width: 50px;
+    height: 50px;
+  }
+
+  .custom-nav{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .custom-nav li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    /* border-radius: 4px; */
+    color: #777;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .custom-nav li a svg{
+    width: 18px;
+    height: 18px;
+    margin-bottom: 5px;
+  }
+  .custom-nav li a:hover{
+    color: #333;
+  }
+  .custom-nav li a.active{
+    border-bottom:3px solid #f41d34;
+    color: #f41d34;
+  }

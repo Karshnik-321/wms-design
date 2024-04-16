@@ -1,0 +1,1022 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+     
+    <title>Focus: Dashboard</title>
+    <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
+    <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/ico/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" rel="stylesheet">
+
+    <!-- Theme -->
+   <link rel="stylesheet" type="text/css" href="app-assets/custom/css/custom.min.css">
+   <link rel="stylesheet" type="text/css" href="app-assets/custom/css/tables/datatable/dataTables.bootstrap5.min.css">
+   <link rel="stylesheet" type="text/css" href="app-assets/custom/css/tables/datatable/responsive.bootstrap5.min.css">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap-extended.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/colors.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/components.css"> 
+    <link rel="stylesheet" type="text/css" href="app-assets/css/pages/dashboard-ecommerce.css"> 
+
+
+ 
+
+    <link rel="stylesheet" type="text/css" href="app-assets/css/core/menu/menu-types/vertical-menu.css"> 
+    <link rel="stylesheet" type="text/css" href="app-assets/css/style.css"> 
+
+</head>  
+
+<body class="vertical-layout vertical-menu-modern  navbar-floating footer-static   menu-collapsed" data-open="click" data-menu="vertical-menu-modern" data-col="">
+
+    <!-- Header-->
+    <nav class="header-navbar navbar navbar-expand-lg align-items-center floating-nav navbar-light navbar-shadow container-xxl">
+        <div class="navbar-container d-flex content">
+            <div class="bookmark-wrapper d-flex align-items-center">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><img src="app-assets/images/wms-logo.svg" width="80" /></a></li>
+                </ul>
+                <ul class="nav navbar-nav d-xl-none  d-none">
+                    <li class="nav-item"><a class="nav-link menu-toggle" href="#"><i class="ficon" data-feather="menu"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav bookmark-icons  d-none">
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Email"><i class="ficon" data-feather="mail"></i></a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Chat"><i class="ficon" data-feather="message-square"></i></a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Calendar"><i class="ficon" data-feather="calendar"></i></a></li>
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Todo"><i class="ficon" data-feather="check-square"></i></a></li>
+                </ul>
+                <ul class="nav navbar-nav  d-none">
+                    <li class="nav-item d-none d-lg-block"><a class="nav-link bookmark-star"><i class="ficon text-warning" data-feather="star"></i></a>
+                        <div class="bookmark-input search-input">
+                            <div class="bookmark-input-icon"><i data-feather="search"></i></div>
+                            <input class="form-control input" type="text" placeholder="Bookmark" tabindex="0" data-search="search">
+                            <ul class="search-list search-list-bookmark"></ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="nav navbar-nav align-items-center ms-auto">
+                <li>
+                    <select class="form-select product" id="products" name="show_at">
+                       
+                        <option value="5"  >Jagran - English</option> 
+                        <option value="6" selected >Jagran Prime</option> 
+                        <option value="7"  >HZ - Hindi</option> 
+                        <option value="8"  >Jagran Play</option> 
+                        <option value="9"  >OMH - Hindi</option> 
+                        <option value="10"  >HZ - English</option> 
+                        <option value="11"  >HZ - Tamil</option> 
+                        <option value="12"  >Jagran</option> 
+                        <option value="13"  >Jagran TV</option> 
+                        <option value="14"  >HZ - Top Deals</option> 
+                        <option value="15"  >OMH - English</option> 
+                        <option value="16"  >OMH - Tamil</option> 
+                        <option value="17"  >Eng-HZ -Top Deals</option> 
+                        <option value="18"  >Nai Dunia</option> 
+                        <option value="19"  >Gujrati Jagran</option> 
+                        <option value="20"  >Vishvas News </option> 
+                        <option value="21"  >Jagran Cricket</option> 
+                        <option value="22"  >Jagran Josh</option> 
+                        <option value="23"  >Jagran Josh college</option> 
+                        <option value="24"  >Punjabi Jagran</option> 
+                        <option value="25"  >Jagran - Top Deals</option> 
+                        <option value="26"  >Jagran - election</option> 
+                        <option value="27"  >election - naidunia</option> 
+                        <option value="28"  >election-englishjagran</option> 
+                        <option value="29"  >Marathi Jagran</option> 
+                    </select>
+                </li>
+                <!-- <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon" data-feather="moon"></i></a></li> -->
+                <li class="nav-item nav-search d-none"><a class="nav-link nav-link-search"><i class="ficon" data-feather="search"></i></a>
+                    <div class="search-input">
+                        <div class="search-input-icon"><i data-feather="search"></i></div>
+                        <input class="form-control input" type="text" placeholder="Explore ..." tabindex="-1" data-search="search">
+                        <div class="search-input-close"><i data-feather="x"></i></div>
+                        <ul class="search-list search-list-main"></ul>
+                    </div>
+                </li> 
+                <li class="nav-item dropdown dropdown-notification me-25 d-none"><a class="nav-link" href="#" data-bs-toggle="dropdown"><i class="ficon" data-feather="bell"></i><span class="badge rounded-pill bg-danger badge-up">5</span></a>
+                    <ul class="dropdown-menu dropdown-menu-media dropdown-menu-end">
+                        <li class="dropdown-menu-header">
+                            <div class="dropdown-header d-flex">
+                                <h4 class="notification-title mb-0 me-auto">Notifications</h4>
+                                <div class="badge rounded-pill badge-light-primary">6 New</div>
+                            </div>
+                        </li>
+                        <li class="scrollable-container media-list"><a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar"><img src="app-assets/images/portrait/small/avatar-s-15.jpg" alt="avatar" width="32" height="32"></div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">Congratulation Sam 🎉</span>winner!</p><small class="notification-text"> Won the monthly best seller badge.</small>
+                                    </div>
+                                </div>
+                            </a><a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar"><img src="app-assets/images/portrait/small/avatar-s-3.jpg" alt="avatar" width="32" height="32"></div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">New message</span>&nbsp;received</p><small class="notification-text"> You have 10 unread messages</small>
+                                    </div>
+                                </div>
+                            </a><a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar bg-light-danger">
+                                            <div class="avatar-content">MD</div>
+                                        </div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">Revised Order 👋</span>&nbsp;checkout</p><small class="notification-text"> MD Inc. order updated</small>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="list-item d-flex align-items-center">
+                                <h6 class="fw-bolder me-auto mb-0">System Notifications</h6>
+                                <div class="form-check form-check-primary form-switch">
+                                    <input class="form-check-input" id="systemNotification" type="checkbox" checked="">
+                                    <label class="form-check-label" for="systemNotification"></label>
+                                </div>
+                            </div><a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar bg-light-danger">
+                                            <div class="avatar-content"><i class="avatar-icon" data-feather="x"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">Server down</span>&nbsp;registered</p><small class="notification-text"> USA Server is down due to high CPU usage</small>
+                                    </div>
+                                </div>
+                            </a><a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar bg-light-success">
+                                            <div class="avatar-content"><i class="avatar-icon" data-feather="check"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">Sales report</span>&nbsp;generated</p><small class="notification-text"> Last month sales report generated</small>
+                                    </div>
+                                </div>
+                            </a><a class="d-flex" href="#">
+                                <div class="list-item d-flex align-items-start">
+                                    <div class="me-1">
+                                        <div class="avatar bg-light-warning">
+                                            <div class="avatar-content"><i class="avatar-icon" data-feather="alert-triangle"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="list-item-body flex-grow-1">
+                                        <p class="media-heading"><span class="fw-bolder">High memory</span>&nbsp;usage</p><small class="notification-text"> BLR Server using high memory</small>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="dropdown-menu-footer"><a class="btn btn-primary w-100" href="#">Read all notifications</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown dropdown-user"><a class="nav-link dropdown-toggle dropdown-user-link" id="dropdown-user" href="#" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="user-nav d-sm-flex d-none"><span class="user-name fw-bolder">Karshnik Singh</span><span class="user-status">Admin</span></div><span class="avatar">
+                            <img class="round" src="app-assets/images/logo-icon.png" alt="avatar" height="40" width="40"><span class="avatar-status-online"></span></span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdown-user">
+                        <!-- <a class="dropdown-item" href="page-profile.html"><i class="me-50" data-feather="user"></i> Profile</a><a class="dropdown-item" href="#"><i class="me-50" data-feather="mail"></i> Inbox</a><a class="dropdown-item" href="#"><i class="me-50" data-feather="check-square"></i> Task</a><a class="dropdown-item" href="#"><i class="me-50" data-feather="message-square"></i> Chats</a>
+                        <div class="dropdown-divider"></div> -->
+                        <a class="dropdown-item" href="settings.html"><i class="me-50" data-feather="settings"></i> Settings</a><!-- <a class="dropdown-item" href="page-pricing.html"><i class="me-50" data-feather="credit-card"></i> Pricing</a><a class="dropdown-item" href="page-faq.html"><i class="me-50" data-feather="help-circle"></i> FAQ</a> --> <a class="dropdown-item" href=" login.html"><i class="me-50" data-feather="power"></i> Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="main-search-list-defaultlist d-none">
+        <li class="d-flex align-items-center"><a href="#">
+                <h6 class="section-label mt-75 mb-0">Files</h6>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="app-assets/images/icons/xls.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Two new item submitted</p><small class="text-muted">Marketing Manager</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;17kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="app-assets/images/icons/jpg.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">52 JPG file Generated</p><small class="text-muted">FontEnd Developer</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;11kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="app-assets/images/icons/pdf.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">25 PDF File Uploaded</p><small class="text-muted">Digital Marketing Manager</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;150kb</small>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between w-100" href="app-file-manager.html">
+                <div class="d-flex">
+                    <div class="me-75"><img src="app-assets/images/icons/doc.png" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Anna_Strong.doc</p><small class="text-muted">Web Designer</small>
+                    </div>
+                </div><small class="search-data-size me-50 text-muted">&apos;256kb</small>
+            </a></li>
+        <li class="d-flex align-items-center"><a href="#">
+                <h6 class="section-label mt-75 mb-0">Members</h6>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="app-assets/images/portrait/small/avatar-s-8.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">John Doe</p><small class="text-muted">UI designer</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="app-assets/images/portrait/small/avatar-s-1.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Michal Clark</p><small class="text-muted">FontEnd Developer</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="app-assets/images/portrait/small/avatar-s-14.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Milena Gibson</p><small class="text-muted">Digital Marketing Manager</small>
+                    </div>
+                </div>
+            </a></li>
+        <li class="auto-suggestion"><a class="d-flex align-items-center justify-content-between py-50 w-100" href="app-user-view-account.html">
+                <div class="d-flex align-items-center">
+                    <div class="avatar me-75"><img src="app-assets/images/portrait/small/avatar-s-6.jpg" alt="png" height="32"></div>
+                    <div class="search-data">
+                        <p class="search-data-title mb-0">Anna Strong</p><small class="text-muted">Web Designer</small>
+                    </div>
+                </div>
+            </a></li>
+    </ul>
+    <ul class="main-search-list-defaultlist-other-list d-none">
+        <li class="auto-suggestion justify-content-between"><a class="d-flex align-items-center justify-content-between w-100 py-50">
+                <div class="d-flex justify-content-start"><span class="me-75" data-feather="alert-circle"></span><span>No results found.</span></div>
+            </a></li>
+    </ul>
+    <!-- END: Header-->
+
+
+    <!-- Main Menu-->
+   <div class="main-menu menu-fixed menu-light menu-accordion menu-shadow d-none" data-scroll-to-active="true">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav flex-row">
+                <li class="nav-item me-auto"><a class="navbar-brand" href="index.html"><span class="brand-logo">
+                            
+
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  height="26" viewBox="0 0 964 930.31" enable-background="new 0 0 964 930.31" xml:space="preserve">
+                                <g id="Background">
+                                </g>
+                                <g id="Layer_1">
+                                    <g>
+                                        <linearGradient id="XMLID_2_" gradientUnits="userSpaceOnUse" x1="0" y1="85.4619" x2="964" y2="85.4619">
+                                            <stop  offset="0" style="stop-color:#1C75BC"/>
+                                            <stop  offset="1" style="stop-color:#2B3990"/>
+                                        </linearGradient>
+                                        <polygon id="XMLID_783_" fill="url(#XMLID_2_)" points="964,170.924 0,170.924 108.234,0 855.766,0        "/>
+                                        <linearGradient id="XMLID_3_" gradientUnits="userSpaceOnUse" x1="108.2349" y1="636.0786" x2="855.5098" y2="636.0786">
+                                            <stop  offset="0" style="stop-color:#1C75BC"/>
+                                            <stop  offset="1" style="stop-color:#2B3990"/>
+                                        </linearGradient>
+                                        <polygon id="XMLID_579_" fill="url(#XMLID_3_)" points="855.51,341.848 326.37,341.848 326.37,341.848 108.489,341.848 
+                                            108.489,341.848 108.235,341.848 216.979,512.772 216.979,512.772 482,930.31 591.644,757.568 435.438,512.772 747.021,512.772      
+                                            "/>
+                                    </g>
+                                </g>
+                                </svg>
+
+
+                               <!--  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                  height="24" viewBox="0 0 389.507 400.551" enable-background="new 0 0 389.507 400.551"
+                                 xml:space="preserve">
+                            <g>
+                                <g>
+                                    <polygon fill="#0780E2" points="389.507,2.259 389.507,0 0,0 0,106.568 287.551,106.568       "/>
+                                    <polygon fill="#56459B" points="389.507,2.259 389.507,0 0,0 0,106.568 287.551,106.568       "/>
+                                </g>
+                                <g>
+                                    <polygon fill="#0780E2" points="104.387,293.982 0,293.982 0,400.551 0.23,400.551        "/>
+                                    <polygon fill="#209CEF" points="104.387,293.982 0,293.982 0,400.551 0.23,400.551        "/>
+                                </g>
+                                <g>
+                                    <polygon fill="#0780E2" points="248.047,146.991 0,146.991 0,253.559 143.891,253.559         "/>
+                                    <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="0" y1="200.2744" x2="248.0469" y2="200.2744">
+                                        <stop  offset="0" style="stop-color:#1B75BB"/>
+                                        <stop  offset="1" style="stop-color:#2B388F"/>
+                                    </linearGradient>
+                                    <polygon fill="url(#SVGID_1_)" points="248.047,146.991 0,146.991 0,253.559 143.891,253.559      "/>
+                                </g>
+                            </g>
+                            </svg> -->
+
+
+
+                        </span>
+                        <h2 class="brand-text">J-Focus</h2>
+                    </a></li>
+                <li class="nav-item nav-toggle"><a class="nav-link modern-nav-toggle pe-0" data-bs-toggle="collapse"><i class="d-block d-xl-none text-primary toggle-icon font-medium-4" data-feather="x"></i><i class="d-none d-xl-block collapse-toggle-icon font-medium-4  text-primary" data-feather="disc" data-ticon="disc"></i></a></li>
+            </ul>
+        </div>
+        <div class="shadow-bottom"></div>
+        <div class="main-menu-content">
+            <ul class="navigation navigation-main" id="main-menu-navigation" data-menu="menu-navigation">
+                <li class=" nav-item"><a class="d-flex align-items-center" href="index.html"><i data-feather="home"></i><span class="menu-title text-truncate" data-i18n="Dashboards">Dashboards</span> </a>
+                    
+                </li>
+                <li class=" navigation-header"><span data-i18n="Apps &amp; Pages">Naviagtion &amp; Pages</span><i data-feather="more-horizontal"></i>
+                </li>
+                 
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather='list'></i><span class="menu-title text-truncate" data-i18n="Invoice">Features</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="header-navigation.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="List">Header</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="footer.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Footer</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Permotional Space</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Chat Tags</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Script Manager</span></a>
+                        </li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Manage City</span></a>
+                        </li>
+                        
+                    </ul>
+                </li>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather='box'></i><span class="menu-title text-truncate" data-i18n="Invoice">Module / Products</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Webstories</span></a> </li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Astrology</span></a> </li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Videos</span></a> </li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Affiliated</span></a> </li>
+                        
+                    </ul>
+                </li>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather='settings'></i><span class="menu-title text-truncate" data-i18n="Invoice">Service</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">SSO</span></a> </li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Push Notification</span></a> </li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Subscription</span></a> </li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Newsletter</span></a> </li>
+                    </ul>
+                </li>
+                <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather='cpu'></i><span class="menu-title text-truncate" data-i18n="Invoice">AI Hub</span></a>
+                    <ul class="menu-content">
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">SSO</span></a> </li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Push Notification</span></a> </li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Subscription</span></a> </li>
+                        <li><a class="d-flex align-items-center" href="#"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Newsletter</span></a> </li>
+                    </ul>
+                </li>
+                   
+                     
+                
+            </ul>
+        </div>
+    </div>
+    <!-- END: Main Menu-->
+
+    <!-- Content-->
+    <div class="app-content content ">
+        <div class="content-overlay"></div>
+        <div class="header-navbar-shadow"></div>
+        <div class="content-wrapper container-xxl p-0"> 
+            <div class="content-body">
+                <section>
+                    <div class="row justify-content-center pt-5 pb-5">
+                        <div class="col-lg-6 col-12 text-center">
+                            <h1 class="mb-2">My Access</h1>
+                            <p>Creating a dashboard is just one part of conveying information to consumers. Adding text on dashboards allows a story to be told alongside the data. </p>
+                        </div>
+                    </div>
+                    <div class="row match-height justify-content-center">
+                        
+                        <div class="col-lg-5 col-6">
+                            <div class="row match-height">
+                                <!-- Bar Chart - Orders -->
+                                <div class="col-lg-6 col-md-3 col-6">
+                                    <div class="card card-custom card-hover">
+                                        <a href="header-navigation.html">
+                                            <div class="card-body pt-3 pb-3 text-center">
+                                                <div class="card-icon"><i data-feather='list' class="icon"></i></div>
+                                                <h3 class="fw-bolder mt-1">Features</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <!--/ Bar Chart - Orders -->
+
+                                <!-- Line Chart - Profit -->
+                                <div class="col-lg-6 col-md-3 col-6">
+                                    <div class="card card-custom card-hover">
+                                        <a href="#">
+                                            <div class="card-body pt-3 pb-3 text-center">
+                                                <div class="card-icon"><i data-feather='box' class="icon"></i></div>
+                                                <h3 class="fw-bolder mt-1">Products</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/ Line Chart - Profit -->
+
+                                <!-- Bar Chart - Orders -->
+                                <div class="col-lg-6 col-md-3 col-6">
+                                    <div class="card card-custom card-hover">
+                                        <a href="#">
+                                            <div class="card-body pt-3 pb-3 text-center">
+                                                <div class="card-icon"><i data-feather='settings' class="icon"></i></div>
+                                                <h3 class="fw-bolder mt-1">Servies</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/ Bar Chart - Orders -->
+
+                                <!-- Line Chart - Profit -->
+                                <div class="col-lg-6 col-md-3 col-6">
+                                    <div class="card card-custom card-hover">
+                                        <a href="#">
+                                            <div class="card-body pt-3 pb-3 text-center">
+                                                <div class="card-icon"><i data-feather='cpu' class="icon"></i></div>
+                                                <h3 class="fw-bolder mt-1">AI Hub</h3>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/ Line Chart - Profit -->
+
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <div class="row match-height d-none"> 
+                    <!-- Statistics Card -->
+                        <div class="col-xl-12 col-md-6 col-12">
+                            <div class="card card-statistics">
+                                <div class="card-header">
+                                    <h4 class="card-title">Statistics</h4>
+                                    <div class="d-flex align-items-center">
+                                        <p class="card-text font-small-2 me-25 mb-0">Updated 1 month ago</p>
+                                    </div>
+                                </div>
+                                <div class="card-body statistics-body">
+                                    <div class="row">
+                                        <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
+                                            <div class="d-flex flex-row">
+                                                <div class="avatar bg-light-primary me-2">
+                                                    <div class="avatar-content">
+                                                        <i data-feather="trending-up" class="avatar-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <h4 class="fw-bolder mb-0">230k</h4>
+                                                    <p class="card-text font-small-3 mb-0">Sales</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-xl-0">
+                                            <div class="d-flex flex-row">
+                                                <div class="avatar bg-light-info me-2">
+                                                    <div class="avatar-content">
+                                                        <i data-feather="user" class="avatar-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <h4 class="fw-bolder mb-0">8.549k</h4>
+                                                    <p class="card-text font-small-3 mb-0">Customers</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-sm-6 col-12 mb-2 mb-sm-0">
+                                            <div class="d-flex flex-row">
+                                                <div class="avatar bg-light-danger me-2">
+                                                    <div class="avatar-content">
+                                                        <i data-feather="box" class="avatar-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <h4 class="fw-bolder mb-0">1.423k</h4>
+                                                    <p class="card-text font-small-3 mb-0">Products</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-3 col-sm-6 col-12">
+                                            <div class="d-flex flex-row">
+                                                <div class="avatar bg-light-success me-2">
+                                                    <div class="avatar-content">
+                                                        <i data-feather="dollar-sign" class="avatar-icon"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="my-auto">
+                                                    <h4 class="fw-bolder mb-0">$9745</h4>
+                                                    <p class="card-text font-small-3 mb-0">Revenue</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Statistics Card -->
+                    </div>
+
+
+                    <div class="row match-height d-none">
+                        <div class="col-lg-4 col-12">
+                            <div class="row match-height">
+                                <!-- Bar Chart - Orders -->
+                                <div class="col-lg-6 col-md-3 col-6">
+                                    <div class="card">
+                                        <div class="card-body pb-50">
+                                            <h6>Ad Viewability</h6>
+                                            <h2 class="fw-bolder mb-1">2,76k</h2>
+                                            <div id="statistics-order-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/ Bar Chart - Orders -->
+
+                                <!-- Line Chart - Profit -->
+                                <div class="col-lg-6 col-md-3 col-6">
+                                    <div class="card card-tiny-line-stats">
+                                        <div class="card-body pb-50">
+                                            <h6>Profit</h6>
+                                            <h2 class="fw-bolder mb-1">6,24k</h2>
+                                            <div id="statistics-profit-chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/ Line Chart - Profit -->
+
+                                <!-- Earnings Card -->
+                                <div class="col-lg-12 col-md-6 col-12">
+                                    <div class="card earnings-card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <h4 class="card-title mb-1">Earnings</h4>
+                                                    <div class="font-small-2">This Month</div>
+                                                    <h5 class="mb-1">$4055.56</h5>
+                                                    <p class="card-text text-muted font-small-2">
+                                                        <span class="fw-bolder">68.2%</span><span> more earnings than last month.</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div id="earnings-chart"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--/ Earnings Card -->
+                            </div>
+                        </div>
+
+                        <!-- Revenue Report Card -->
+                        <div class="col-lg-8 col-12">
+                            <div class="card card-revenue-budget">
+                                <div class="row mx-0">
+                                    <div class="col-md-8 col-12 revenue-report-wrapper">
+                                        <div class="d-sm-flex justify-content-between align-items-center mb-3">
+                                            <h4 class="card-title mb-50 mb-sm-0">Ad Revenue </h4>
+                                            <div class="d-flex align-items-center">
+                                                <div class="d-flex align-items-center me-2">
+                                                    <span class="bullet bullet-primary font-small-3 me-50 cursor-pointer"></span>
+                                                    <span>Earning</span>
+                                                </div>
+                                                <div class="d-flex align-items-center ms-75">
+                                                    <span class="bullet bullet-warning font-small-3 me-50 cursor-pointer"></span>
+                                                    <span>Expense</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="revenue-report-chart"></div>
+                                    </div>
+                                    <div class="col-md-4 col-12 budget-wrapper">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-outline-primary btn-sm dropdown-toggle budget-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                2020
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                <a class="dropdown-item" href="#">2020</a>
+                                                <a class="dropdown-item" href="#">2019</a>
+                                                <a class="dropdown-item" href="#">2018</a>
+                                            </div>
+                                        </div>
+                                        <h2 class="mb-25">$25,852</h2>
+                                        <div class="d-flex justify-content-center">
+                                            <span class="fw-bolder me-25">Budget:</span>
+                                            <span>56,800</span>
+                                        </div>
+                                        <div id="budget-chart"></div>
+                                        <button type="button" class="btn btn-primary">Increase Budget</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Revenue Report Card -->
+                    </div>
+
+
+
+                        <div class="row match-height d-none">
+                        <!-- Company Table Card -->
+
+                        <div class="col-lg-12 col-12">
+                            <div class="card card-company-table">
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <div class="dataTables_wrapper dt-bootstrap5 no-footer">
+
+                                        <div class="row d-flex justify-content-between align-items-center m-1 mt-2 mb-2">
+                                            <div class="col-lg-6 d-flex align-items-center">
+                                                  <div id="DataTables_Table_0_filter" class="dataTables_filter"> <input type="search"
+                                                            class="form-control" placeholder="Search Articles by Id"
+                                                            aria-controls="DataTables_Table_0"> </div>
+                                                
+                                            </div>
+                                            <div class="col-lg-6 d-flex align-items-center justify-content-lg-end flex-lg-nowrap flex-wrap pe-lg-1 p-0">
+                                               
+                                                <div class="invoice_status col-4"><select id="UserRole" class="form-select ms-50 text-capitalize">
+                                                        <option value=""> Filter by Category </option>
+                                                        <option value="Downloaded" class="text-capitalize">Downloaded</option>
+                                                        <option value="Draft" class="text-capitalize">Draft</option>
+                                                        <option value="Paid" class="text-capitalize">Paid</option>
+                                                        <option value="Partial Payment" class="text-capitalize">Partial Payment</option>
+                                                        <option value="Past Due" class="text-capitalize">Past Due</option>
+                                                        <option value="Sent" class="text-capitalize">Sent</option>
+                                                    </select></div>
+                                            </div>
+                                        </div>
+                                        
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Aricles</th>
+                                                    <th>Category</th>
+                                                    <th>ID</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <div>
+                                                                <div class="fw-bolder">UP Chunav 2022: आजमगढ़ की गोपालपुर सीट से अखिलेश के चुनाव लड़ने की है चर्चा</div>
+                                                                <span class="font-small-2 text-muted d-inline me-1">By Suman</span>
+                                                                <span class="font-small-2 text-muted d-inline">17 Jan 2022</span>
+                                                                 
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <span>Uttar Pradesh</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap">
+                                                        <div class="d-flex flex-column">
+                                                            <span class="mb-25">22395142</span> 
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="dropdown">
+                                                                <a class="btn btn-sm btn-icon dropdown-toggle hide-arrow fw-bolder" data-bs-toggle="dropdown"> <i data-feather='more-vertical'></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a href="#" class="dropdown-item"> <i data-feather='edit'></i> Edit</a>
+                                                                    <a href="#" class="dropdown-item"> <i data-feather='trash'></i> Delete</a>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <div>
+                                                                <div class="fw-bolder">भाजपा की केंद्रीय कार्य समिति की बैठक में बड़े फैसले, यूपी में निषाद पार्टी और अपना दल के साथ लड़ेगी BJP, जेपी नड्डा का एलान</div>
+                                                                <span class="font-small-2 text-muted d-inline me-1">By Suman</span>
+                                                                <span class="font-small-2 text-muted d-inline">17 Jan 2022</span>
+                                                                 
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <span>Politics</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap">
+                                                        <div class="d-flex flex-column">
+                                                            <span class="mb-25">22395142</span> 
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="dropdown">
+                                                                <a class="btn btn-sm btn-icon dropdown-toggle hide-arrow fw-bolder" data-bs-toggle="dropdown"> <i data-feather='more-vertical'></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a href="#" class="dropdown-item"> <i data-feather='edit'></i> Edit</a>
+                                                                    <a href="#" class="dropdown-item"> <i data-feather='trash'></i> Delete</a>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <div>
+                                                                <div class="fw-bolder">'मेक इन इंडिया' को फ‍िर बड़ी कामयाबी, मारीशस को उन्नत हल्के हेलीकॉप्टरों ALH Mk III का निर्यात करेगा हिंदुस्तान एयरोनॉटिक्स लिमिटेड</div>
+                                                                <span class="font-small-2 text-muted d-inline me-1">By Suman</span>
+                                                                <span class="font-small-2 text-muted d-inline">17 Jan 2022</span>
+                                                                 
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <span>National</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap">
+                                                        <div class="d-flex flex-column">
+                                                            <span class="mb-25">22395142</span> 
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="dropdown">
+                                                                <a class="btn btn-sm btn-icon dropdown-toggle hide-arrow fw-bolder" data-bs-toggle="dropdown"> <i data-feather='more-vertical'></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a href="#" class="dropdown-item"> <i data-feather='edit'></i> Edit</a>
+                                                                    <a href="#" class="dropdown-item"> <i data-feather='trash'></i> Delete</a>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <div>
+                                                                <div class="fw-bolder">जम्मू-कश्मीर में 44.32 करोड़ रुपये के निवेश का प्रस्ताव लेकर 4114 उद्योगपतियों ने किए आनलाइन आवेदन</div>
+                                                                <span class="font-small-2 text-muted d-inline me-1">By Suman</span>
+                                                                <span class="font-small-2 text-muted d-inline">17 Jan 2022</span>
+                                                                 
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <span>Jammu & Kashmir</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap">
+                                                        <div class="d-flex flex-column">
+                                                            <span class="mb-25">22395142</span> 
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="dropdown">
+                                                                <a class="btn btn-sm btn-icon dropdown-toggle hide-arrow fw-bolder" data-bs-toggle="dropdown"> <i data-feather='more-vertical'></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a href="#" class="dropdown-item"> <i data-feather='edit'></i> Edit</a>
+                                                                    <a href="#" class="dropdown-item"> <i data-feather='trash'></i> Delete</a>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <div>
+                                                                <div class="fw-bolder">कोरोना वायरस के ओमिक्रोन-डेल्‍टा-वीटा वैरिएंट की क्‍या है पहचान? जानें इसके अलग-अलग लक्षण</div>
+                                                                <span class="font-small-2 text-muted d-inline me-1">By Suman</span>
+                                                                <span class="font-small-2 text-muted d-inline">17 Jan 2022</span>
+                                                                 
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <span>National</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap">
+                                                        <div class="d-flex flex-column">
+                                                            <span class="mb-25">22395142</span> 
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="dropdown">
+                                                                <a class="btn btn-sm btn-icon dropdown-toggle hide-arrow fw-bolder" data-bs-toggle="dropdown"> <i data-feather='more-vertical'></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a href="#" class="dropdown-item"> <i data-feather='edit'></i> Edit</a>
+                                                                    <a href="#" class="dropdown-item"> <i data-feather='trash'></i> Delete</a>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <div>
+                                                                <div class="fw-bolder">Tata CNG cars launch: टाटा मोटर्स ने लॉन्च की एडवांस टेक्नालॉजी युक्त सीएनजी कारें, मारुति-हुंडई को देगी टक्कर</div>
+                                                                <span class="font-small-2 text-muted d-inline me-1">By Suman</span>
+                                                                <span class="font-small-2 text-muted d-inline">17 Jan 2022</span>
+                                                                 
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <span>Automobile</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap">
+                                                        <div class="d-flex flex-column">
+                                                            <span class="mb-25">22395142</span> 
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="dropdown">
+                                                                <a class="btn btn-sm btn-icon dropdown-toggle hide-arrow fw-bolder" data-bs-toggle="dropdown"> <i data-feather='more-vertical'></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a href="#" class="dropdown-item"> <i data-feather='edit'></i> Edit</a>
+                                                                    <a href="#" class="dropdown-item"> <i data-feather='trash'></i> Delete</a>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <div>
+                                                                <div class="fw-bolder">Ind vs SA 1st ODI LIVE: कप्तान बबूमा के बाद वान डेर डुसेन का अर्धशतक, साउथ अफ्रीका को संभाला</div>
+                                                                <span class="font-small-2 text-muted d-inline me-1">By Suman</span>
+                                                                <span class="font-small-2 text-muted d-inline">17 Jan 2022</span>
+                                                                 
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <span>Cricket</span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-nowrap">
+                                                        <div class="d-flex flex-column">
+                                                            <span class="mb-25">22395142</span> 
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="d-flex align-items-center">
+                                                            <div class="dropdown">
+                                                                <a class="btn btn-sm btn-icon dropdown-toggle hide-arrow fw-bolder" data-bs-toggle="dropdown"> <i data-feather='more-vertical'></i></a>
+                                                                <div class="dropdown-menu dropdown-menu-end">
+                                                                    <a href="#" class="dropdown-item"> <i data-feather='edit'></i> Edit</a>
+                                                                    <a href="#" class="dropdown-item"> <i data-feather='trash'></i> Delete</a>
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+ 
+                                            </tbody>
+                                        </table>
+
+                                         <div class="d-flex justify-content-between mx-2 mt-2 row">
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div class="dataTables_info" id="DataTables_Table_0_info" role="status" aria-live="polite">Showing 1 to 10 of 50
+                                                        entries</div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6">
+                                                    <div class="dataTables_paginate paging_simple_numbers" id="DataTables_Table_0_paginate">
+                                                        <ul class="pagination">
+                                                            <li class="paginate_button page-item previous disabled" id="DataTables_Table_0_previous"><a href="#"
+                                                                    aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" class="page-link">&nbsp;</a>
+                                                            </li>
+                                                            <li class="paginate_button page-item active"><a href="#" aria-controls="DataTables_Table_0"
+                                                                    data-dt-idx="1" tabindex="0" class="page-link">1</a></li>
+                                                            <li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="2"
+                                                                    tabindex="0" class="page-link">2</a></li>
+                                                            <li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="3"
+                                                                    tabindex="0" class="page-link">3</a></li>
+                                                            <li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="4"
+                                                                    tabindex="0" class="page-link">4</a></li>
+                                                            <li class="paginate_button page-item "><a href="#" aria-controls="DataTables_Table_0" data-dt-idx="5"
+                                                                    tabindex="0" class="page-link">5</a></li>
+                                                            <li class="paginate_button page-item next" id="DataTables_Table_0_next"><a href="#"
+                                                                    aria-controls="DataTables_Table_0" data-dt-idx="6" tabindex="0" class="page-link">&nbsp;</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/ Company Table Card -->
+                        </div>
+
+                </section>
+
+            </div>
+        </div>
+    </div>
+    <!-- END: Content-->
+
+    <div class="sidenav-overlay"></div>
+    <div class="drag-target"></div>
+
+    <!-- Footer-->
+    <footer class="footer footer-static footer-light">
+        <p class="clearfix mb-0"><span class="float-md-start d-block d-md-inline-block mt-25">COPYRIGHT &copy; 2022 JNM<span class="d-none d-sm-inline-block">, All rights Reserved</span></span>
+            <!-- <span class="float-md-end d-none d-md-block">Hand-crafted & Made with<i data-feather="heart"></i></span> -->
+        </p>
+    </footer>
+    <button class="btn btn-primary btn-icon scroll-top" type="button"><i data-feather="arrow-up"></i></button>
+    <!-- END: Footer-->
+
+ 
+
+    <!--  JS-->
+    <script src="app-assets/custom/js/custom.min.js"></script>
+    
+    <!-- Chart -->
+   <script src="app-assets/custom/js/charts/apexcharts.min.js"></script>
+    <script src="app-assets/js/scripts/pages/dashboard-ecommerce.js"></script>
+
+    <script src="app-assets/js/core/app-menu.js"></script>
+    <script src="app-assets/js/core/app.js"></script> 
+
+
+ 
+    <script>
+        $(window).on('load', function() {
+            if (feather) {
+                feather.replace({
+                    width: 14,
+                    height: 14
+                });
+            }
+        })
+    </script>
+</body>
+<!-- END: Body-->
+
+</html>

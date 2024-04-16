@@ -1,0 +1,14 @@
+.article .title, .article .subtitle, .resize-no {resize: none; }
+.title{font-size:3rem;font-weight:800;line-height: 3rem !important;  }
+.subtitle{font-size:1.5rem;font-weight:800;line-height: 2rem !important; }
+.select2-container--default .select2-selection--single{display: flex; align-items: center;}
+.nav-tab{border-bottom: 1px solid #eee;/* padding: 6px 0; */}
+.nav-tab ul li:nth-child(1) .nav-link{/* padding-left: 0; */border-left: 0;}
+.nav-tab ul li:nth-child(2) .nav-link{/* padding-left: 0; */border-left: 1px solid #eee;}
+.nav-tab ul li:nth-child(3) .nav-link{/* padding-left: 0; */border-left: 1px solid #eee;border-right: 1px solid #eee;}
+.nav-tab .nav-link {color: rgb(139 139 139);border-left: 1px solid #eee;padding: 1rem 1.5rem 0.8rem;}
+.nav-tab .nav-link.active {color: #7367f0;border-left: 0;position: relative;font-weight: 600;}
+.nav-tab .nav-link.active::after{position: absolute;height: 4px;width: 100%;background: white;content: "";left: 0;bottom: -3px;}
+.offcanvas-end {width: 45%; text-align: left;}
+
+ 
