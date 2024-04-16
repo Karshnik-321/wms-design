@@ -146,6 +146,9 @@ html body {
     font-weight: 500;
     font-size: 1.285rem;
   }
+  .page-tabing{
+    margin-bottom:5px;
+  }
   @media only screen and (max-width: 600px) {
     .dashboard-info{
       padding-top: 1.5rem;
@@ -200,8 +203,8 @@ html body {
     color: #333;
   }
   .custom-nav li a.active{
-    border-bottom:3px solid #f41d34;
-    color: #f41d34;
+    border-bottom:2px solid #f41d34;
+    color: #cf1731;
   }
   .overflow-x-auto {
     overflow-x: auto;
